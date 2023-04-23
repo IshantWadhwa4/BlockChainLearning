@@ -8,6 +8,8 @@ contract LearnAddress{
     // payable help Sc to transfer/reseve/hold the ETH
     function getEther() public payable{}
 
+    //fallback() external payable{} // fallback is used to get ether from wallet
+
     function sendEther(address _to, uint ethers) public {
         payable(_to).transfer(ethers);
     } 
