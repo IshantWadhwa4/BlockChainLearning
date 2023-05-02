@@ -13,7 +13,7 @@ contract game_roles{
 
     //mapping(address => Tournament) tournaments;
 
-    constructor() public{
+    constructor(){
         owner = msg.sender;
     }
 
